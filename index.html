@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <script type="module" src="./script.js"></script> -->
+    <nav>
+       <div>
+        Student Portal
+       </div>
+    </nav>
+    <section>
+        <div id="search">
+          <input type="text" placeholder="Search">
+          <button>Search</button>
+        </div>
+        <div id="sort">
+          <button class="sort-btn" id="sort-1" onclick="sortAtoZ()">Sort A->Z</button>
+          <button class="sort-btn" id="sort-2" onclick="sortZtoA()">Sort Z->A</button>
+          <button class="sort-btn" id="sort-3" onclick="sortbyMarks()">Sort By Marks</button>
+          <button class="sort-btn" id="sort-4" onclick=" sortbyPassing()">Sort By Passing</button>
+          <button class="sort-btn" id="sort-5" onclick="sortbyClass()">Sort By Class</button>
+          <button class="sort-btn" id="sort-6" onclick="sortGender()">Sort By Gender</button>
+        </div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+
+    </section>
+    <script src="./data.js"></script>
+</body>
+</html>
